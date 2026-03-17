@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skiftecafé #DanmarkSkifter</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4ede3;
+      --paper: #fffaf3;
+      --ink: #2c2118;
+      --muted: #6b5745;
+      --accent: #a3491d;
+      --accent-soft: #ead3c0;
+      --border: #d8c2ad;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top left, rgba(163, 73, 29, 0.12), transparent 32%),
+        linear-gradient(180deg, #f8f1e8 0%, var(--bg) 100%);
+      color: var(--ink);
+    }
+
+    main {
+      width: min(760px, calc(100% - 2rem));
+      margin: 3rem auto;
+      padding: 2.25rem;
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 24px 60px rgba(58, 37, 22, 0.12);
+    }
+
+    .eyebrow {
+      margin: 0 0 0.75rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 7vw, 4rem);
+      line-height: 1.05;
+      text-decoration: underline;
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.14em;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 0.9rem;
+      padding: 0.45rem 0.8rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .lead {
+      margin: 1.75rem 0 1rem;
+      font-size: clamp(1.2rem, 3.2vw, 1.6rem);
+      line-height: 1.45;
+      font-style: italic;
+    }
+
+    p {
+      margin: 1rem 0;
+      font-size: 1.06rem;
+      line-height: 1.75;
+    }
+
+    h2 {
+      margin: 2rem 0 1rem;
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .schedule {
+      display: grid;
+      gap: 0.9rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .schedule li {
+      display: grid;
+      grid-template-columns: minmax(110px, 145px) 1fr;
+      gap: 1rem;
+      padding: 1rem 1.1rem;
+      background: rgba(234, 211, 192, 0.32);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    .time {
+      font-weight: 700;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    .note {
+      padding: 1rem 1.1rem;
+      border-left: 4px solid var(--accent);
+      background: rgba(255, 255, 255, 0.78);
+      border-radius: 12px;
+    }
+
+    .details {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .detail {
+      padding: 1rem 1.1rem;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    @media (max-width: 640px) {
+      main {
+        margin: 1rem auto;
+        padding: 1.4rem;
+        border-radius: 18px;
+      }
+
+      .schedule li {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Arrangement</p>
+    <h1>Skiftecafé</h1>
+    <div class="tag">#DanmarkSkifter</div>
+
+    <p class="lead">𝑻𝒂𝒈 𝒅𝒊𝒕 𝒇ø𝒓𝒔𝒕𝒆 𝒔𝒌𝒓𝒊𝒅𝒕 𝒗æ𝒌 𝒇𝒓𝒂 𝑩𝒊𝒈 𝑻𝒆𝒄𝒉 𝒊 𝒎𝒐𝒓𝒈𝒆𝒏 𝒆𝒇𝒕𝒆𝒓𝒎𝒊𝒅𝒅𝒂𝒈 𝒔𝒂𝒎𝒎𝒆𝒏 𝒎𝒆𝒅 𝒎𝒊𝒈! (14.30-16.30)</p>
+
+    <p>Du får at se alternativer til Google Chrome og en række sociale medier.</p>
+    <p>Denne skiftecafé er for dig, som er klar til at skifte browser og søgemaskine og/eller er klar til at prøve noget nyt indenfor sociale medier. Tag din bærbare computer og telefon med.</p>
+
+    <h2>Program</h2>
+    <ol class="schedule">
+      <li>
+        <span class="time">14.30-15.00</span>
+        <span>Introduktion, præsentation og tid til at købe kaffe/te.</span>
+      </li>
+      <li>
+        <span class="time">15.00-15.30</span>
+        <span>Vi skifter browser og søgemaskine med udgangspunkt i #DanmarkSkifter's skiftekits.</span>
+      </li>
+      <li>
+        <span class="time">15.45-16.15</span>
+        <span>Præsentation til Fødiverset (the Fediverse) og evt. oprettelse af konto.</span>
+      </li>
+      <li>
+        <span class="time">16.15-16.30</span>
+        <span>Afslutning og tak for i dag.</span>
+      </li>
+    </ol>
+
+    <div class="note">
+      <p>Bemærk at arrangementet foregår på en café. Arrangementet er åbent for alle, men for at have mulighed for at hjælpe alle, er der maksimalt plads til 15 deltagere. Derfor bedes du melde dig til via e-mail. Skifte-assistenter er også meget velkomne.</p>
+      <p>Ejer har sagt ok til, at vi er der, men støt gerne caféen ved at købe noget. Caféen lukker kl. 16.30. Bare for en ordens skyld: arrangøren har ingen relation til caféen eller ejeren.</p>
+    </div>
+
+    <section class="details">
+      <div class="detail">
+        <span class="label">Tilmelding på e-mail</span>
+        <a href="mailto:danmarkskifter@hulthin.dk">danmarkskifter@hulthin.dk</a>
+      </div>
+      <div class="detail">
+        <span class="label">Sted</span>
+        <p>Egestrand kaffe &amp; tehus, Tagensvej 187</p>
+      </div>
+    </section>
+
+    <p>Hvis du ikke kan komme, så får du chancen igen på fredag. Mere om det senere.</p>
+  </main>
+</body>
+</html>
